@@ -14,6 +14,8 @@ April 19, 2026
 - Don't get the practical difference between import and include. I get that import is pulling a specific library while include is almost like copying function code, but I feel like it goes deeper than this.
 April 20, 2026
 - How can C just store chars as ints if they're 2 different datatypes.
+April 22, 2026
+- Why does there have to be a declaration before a function definition in C
 
 ### Connection to drone/CUDA
 April 19, 2026
@@ -35,7 +37,12 @@ April 20, 2026
 April 21, 2026
 - states can be useful to simplify iterating until x. In the case of seperating words and removing whitespaces, getting to the next word.
 - unlike java, functions don't require a return.
+April 22, 2026
+- in C, parameter vars are copies. Similar to Python where they are copies but mutable types such as arrays point to the original address/modifications are reflected in the original
+- Strings end with \0 to signify end. An array of characters that is null terminated (has the \0 at the end) will be treated as a string when called
 ### Filling "Didn't Understand" Gaps
 April 19, 2026
 - Import vs include confusion: C, being the low level language it is, lacks a built-in module system like Java, limiting it to just copying via include and linking. Import handles things like loading the module, avoiding duplicate loads, controlling namespace, and handling dependencies.
 - Chars/ints confusion: chars in C are essentailly just ints (1 byte) but more abstract, representing integers as character values. What's sick is that the way it encodes it adapts depending on the system you're using. Some systems may encode it via ASCII while others may use a different encoding format, so two of the same character on two diff systems can represent different int values.
+April 22, 2026
+- Function declaration vs actual body: alright so this is kinda cool. Initially, the computer reads the code top to bottom when compiling it. When it reads the statement calling the function, it needs to know the return type at that moment to determine whether or not it is correct syntax-wise and ensuring the call matches the function signature. You could just avoid having a declaration by writing the function at the top, but I don't know how people these days format their code since this book was written 50 years ago.
