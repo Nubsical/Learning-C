@@ -40,6 +40,8 @@ April 21, 2026
 April 22, 2026
 - in C, parameter vars are copies. Similar to Python where they are copies but mutable types such as arrays point to the original address/modifications are reflected in the original
 - Strings end with \0 to signify end. An array of characters that is null terminated (has the \0 at the end) will be treated as a string when called
+- usual for extern variables to be in allocated header file, ending in .h, and added via #include. seen with stdio.h
+- don't try to maximize extern var use since that could result in uninteded uses and modifications.
 ### Filling "Didn't Understand" Gaps
 April 19, 2026
 - Import vs include confusion: C, being the low level language it is, lacks a built-in module system like Java, limiting it to just copying via include and linking. Import handles things like loading the module, avoiding duplicate loads, controlling namespace, and handling dependencies.
