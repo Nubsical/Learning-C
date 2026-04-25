@@ -81,6 +81,11 @@ April 25, 2026
 - space used depends both on datatype and how it is used. Compilers determine space used by datatype, which varies between compilers, meaning some datatypes like float and double can be equal.
 - when referring to an unsigned int, you should use %u and %d is for signed and that can't represent the full range of unsigned #s
 - spacing of floats depend on size, with spacing increasing as the number increases.
+- leading 0 on integer means octal, 0x means hexadecimal, both of which can be short/long and signed/unsigned
+- long constants written with L after, # too big to fit in ints are taken as long, unsigned values have U suffix, and UL is unsigned long. Intuitive with datatype names. Floating point constants are considered doubles unless labeled with F.
+- \ooo can be used to represent octals and having an x for the first o can be used to represent hexadecimal, specifically for ascii
+- strings are concatenated in C when they are just following each other like "hello" "world" is just "hello world"
+
 
 
 ### Filling "Didn't Understand" Gaps
