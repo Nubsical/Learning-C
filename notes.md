@@ -50,3 +50,30 @@ April 19, 2026
 - Chars/ints confusion: chars in C are essentailly just ints (1 byte) but more abstract, representing integers as character values. What's sick is that the way it encodes it adapts depending on the system you're using. Some systems may encode it via ASCII while others may use a different encoding format, so two of the same character on two diff systems can represent different int values.
 April 22, 2026
 - Function declaration vs actual body: alright so this is kinda cool. Initially, the computer reads the code top to bottom when compiling it. When it reads the statement calling the function, it needs to know the return type at that moment to determine whether or not it is correct syntax-wise and ensuring the call matches the function signature. You could just avoid having a declaration by writing the function at the top, but I don't know how people these days format their code since this book was written 50 years ago.
+
+---
+
+## Chapter 2 - Types, Operators, Expressions
+
+### Notepad (ignore, just for annotating, will delete)
+
+
+
+
+### Summary
+
+### Understood/Didn't Understand
+
+### Connection to drone/CUDA
+
+### Things worth remembering
+April 25, 2026
+- Strings CAN be concatendated, i guess they will show later
+- first char of var name must be letter with _ being letter as well. 
+- first 31 characters significant when naming variables
+- ints reflect natural size of integers on host machine but i'm pretty sure nowadays its a specific size. Floats are considered single-precision while double's are double precision.
+
+
+### Filling "Didn't Understand" Gaps
+
+
