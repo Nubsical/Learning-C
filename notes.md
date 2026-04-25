@@ -63,7 +63,10 @@ April 22, 2026
 ### Summary
 
 ### Understood/Didn't Understand
-
+April 25, 2026
+- They mention "Two's complement" but don't expand on it when referring to signed integers, gonna have to manually look into what that is.
+- What is the purpose of headers like `<limits.h>`
+- How are floats structured differently that poses challenges to discovering the maximum val. 
 ### Connection to drone/CUDA
 
 ### Things worth remembering
@@ -72,8 +75,17 @@ April 25, 2026
 - first char of var name must be letter with _ being letter as well. 
 - first 31 characters significant when naming variables
 - ints reflect natural size of integers on host machine but i'm pretty sure nowadays its a specific size. Floats are considered single-precision while double's are double precision.
+- short < int < long, shorts generally 16 bits, ints generally 16 or 32, longs generally >32
+-unsigned numbers are positive or 0, "obey laws of arithmetic modulo 2^n" where n is # of bits in type". Follows standard of binary where range is 0-255. 
+- signed between -128 to 127. printable characters are always positive.
+- space used depends both on datatype and how it is used. Compilers determine space used by datatype, which varies between compilers, meaning some datatypes like float and double can be equal.
+- when referring to an unsigned int, you should use %u and %d is for signed and that can't represent the full range of unsigned #s
+- spacing of floats depend on size, with spacing increasing as the number increases.
 
 
 ### Filling "Didn't Understand" Gaps
-
+April 25, 2026
+- Signed ints/"two's complement" confusion: not that deep. signed its just use the first bit on the num to represent + or - (0 or 1 respectively), that cuts it from 255 to 127 being the max num since 2^7 isn't there anymore. 
+- purpose of datatype headers confusion: they provide constant values specific to machines that represent constrictions like max of that datatype or min to remove need for guesswork, and also make it more adaptable between systems.
+- floats confusion: floats follow a specific formula, value = 1.mantissa * 2^exponenent. To find the max you would want to keep multiplying a float by two until it reaches is maximum as multiplying by two is essentally adding 1 to the exponenet, and when the exponenet reading the maximum possible value, the float is at it's maximum.
 
