@@ -8,6 +8,8 @@ Format: dated entries, chapter summaries when I finish one, questions I want to 
 ## Chapter 1 - Tutorial Intro
 
 ### Summary
+April 24, 2026
+Chapter 1 was mostly a giant runthrough of the basic format and functions of C. C doesn't have concatination in the same way Java/Python do; instead, the %x is used to embed variables, whether it would be ints, strings, chars, etc into a string. Lines are read on input through iterating each character, each of which is literally an integer which corresponds to values on an ascii table for binary representation in the memory. A string is just a collection of chars with \0 at the end to signify the end. Files end with EOF (end of file), a special character to indicate the end. Variables hoisted outside of main() are referenced via "extern", though its better practice to minimize use of external variables due to unintentional uses/modifications. 
 
 ### Understood/Didn't Understand
 April 19, 2026
