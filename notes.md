@@ -67,6 +67,7 @@ April 25, 2026
 - They mention "Two's complement" but don't expand on it when referring to signed integers, gonna have to manually look into what that is.
 - What is the purpose of headers like `<limits.h>`
 - How are floats structured differently that poses challenges to discovering the maximum val. 
+April 26, 2026
 - Why is int truncation behavior when divided or modulod machine dependent?
 ### Connection to drone/CUDA
 
@@ -92,6 +93,15 @@ April 26, 2026
 - relational operators (`<, >, <=, >=`) have same precedence, but higher precedence than == and !=, equality operators. Think of comparing values vs whether they are literally equal or nah. Both relational and equality operators are lower in precendence to arithimic operators.
 - && has higher precedence than ||, both of which have low precedence allowing for seperation without parenthesis of diff comparisons
 - when compared, the comparison is evaluated to 0 (false) or 1(true) rather than direct boolean. 
+- chars have a lot of flexibility because of their short num nature
+- `<ctype.h>` gives functions for tests/conversions for characters like isdigit() or tolower()
+- because machines vary, you should explicitly specify signed or unsigned when using characters for non-character related purposes 
+- during binary operations of different types, the lower is converted to higher type (short converted to long, int converted to long). Only exception is floats, which convert doubles to floats to save storage in large arrays
+- -1L < 1U and -1L > 1UL. First condition is true because 1U, which is an int that's unsigned, gets promoted to the "larger" type of the two (L) which is signed. So 1U, an unsigned int, becomes signed long. BUT, with -1L > 1UL, both are longs. C then interprets the L (signed long) as being "smaller" than UL (unsigned long), converting the smaller -1L, a signed long, to an unsigned long. Unsigned -> signed does some conversion i think i'll learn about that converts it to a large + num by the way it converts it
+- UNSIGNED IT HIGHER THAN SIGNED
+- for assignments, its a lot simpler, just right type is left type
+- despite signed or unsigned, chars -> ints
+
 
 
 ### Filling "Didn't Understand" Gaps
@@ -99,5 +109,6 @@ April 25, 2026
 - Signed ints/"two's complement" confusion: not that deep. signed its just use the first bit on the num to represent + or - (0 or 1 respectively), that cuts it from 255 to 127 being the max num since 2^7 isn't there anymore. 
 - purpose of datatype headers confusion: they provide constant values specific to machines that represent constrictions like max of that datatype or min to remove need for guesswork, and also make it more adaptable between systems.
 - floats confusion: floats follow a specific formula, value = 1.mantissa * 2^exponenent. To find the max you would want to keep multiplying a float by two until it reaches is maximum as multiplying by two is essentally adding 1 to the exponenet, and when the exponenet reading the maximum possible value, the float is at it's maximum.
+April 26, 2026
 - truncation being machine dependent confusion: back then, there wasn't a standard so some cpus truncated to -infinity vs to 0. Today, the standard is 0. 
 
