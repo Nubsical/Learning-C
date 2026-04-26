@@ -89,6 +89,9 @@ April 25, 2026
 April 26, 2026
 - enumerations can be helpful both for convenience when setting variables with consecutive values and checking type validity during compilation compared to constants
 - binary operators work on two elements while unary operators only 1 (i++, -i, !i). Unary has highest precendence
+- relational operators (`<, >, <=, >=`) have same precedence, but higher precedence than == and !=, equality operators. Think of comparing values vs whether they are literally equal or nah. Both relational and equality operators are lower in precendence to arithimic operators.
+- && has higher precedence than ||, both of which have low precedence allowing for seperation without parenthesis of diff comparisons
+- when compared, the comparison is evaluated to 0 (false) or 1(true) rather than direct boolean. 
 
 
 ### Filling "Didn't Understand" Gaps
