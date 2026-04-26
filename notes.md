@@ -67,6 +67,7 @@ April 25, 2026
 - They mention "Two's complement" but don't expand on it when referring to signed integers, gonna have to manually look into what that is.
 - What is the purpose of headers like `<limits.h>`
 - How are floats structured differently that poses challenges to discovering the maximum val. 
+- Why is int truncation behavior when divided or modulod machine dependent?
 ### Connection to drone/CUDA
 
 ### Things worth remembering
@@ -85,7 +86,9 @@ April 25, 2026
 - long constants written with L after, # too big to fit in ints are taken as long, unsigned values have U suffix, and UL is unsigned long. Intuitive with datatype names. Floating point constants are considered doubles unless labeled with F.
 - \ooo can be used to represent octals and having an x for the first o can be used to represent hexadecimal, specifically for ascii
 - strings are concatenated in C when they are just following each other like "hello" "world" is just "hello world"
-
+April 26, 2026
+- enumerations can be helpful both for convenience when setting variables with consecutive values and checking type validity during compilation compared to constants
+- binary operators work on two elements while unary operators only 1 (i++, -i, !i). Unary has highest precendence
 
 
 ### Filling "Didn't Understand" Gaps
@@ -93,4 +96,5 @@ April 25, 2026
 - Signed ints/"two's complement" confusion: not that deep. signed its just use the first bit on the num to represent + or - (0 or 1 respectively), that cuts it from 255 to 127 being the max num since 2^7 isn't there anymore. 
 - purpose of datatype headers confusion: they provide constant values specific to machines that represent constrictions like max of that datatype or min to remove need for guesswork, and also make it more adaptable between systems.
 - floats confusion: floats follow a specific formula, value = 1.mantissa * 2^exponenent. To find the max you would want to keep multiplying a float by two until it reaches is maximum as multiplying by two is essentally adding 1 to the exponenet, and when the exponenet reading the maximum possible value, the float is at it's maximum.
+- truncation being machine dependent confusion: back then, there wasn't a standard so some cpus truncated to -infinity vs to 0. Today, the standard is 0. 
 
