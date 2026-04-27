@@ -101,6 +101,9 @@ April 26, 2026
 - UNSIGNED IT HIGHER THAN SIGNED
 - for assignments, its a lot simpler, just right type is left type
 - despite signed or unsigned, chars -> ints
+April 27, 2026
+- values passed to parameters are converted to parameter datatype if applicable and when there isn't a function prototype, char and shorts -> ints and floats -> doubles. On modern systems I don't even think you can do that though.
+- casting has same precedence as unary operators
 
 
 
