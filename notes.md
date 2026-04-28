@@ -104,7 +104,10 @@ April 26, 2026
 April 27, 2026
 - values passed to parameters are converted to parameter datatype if applicable and when there isn't a function prototype, char and shorts -> ints and floats -> doubles. On modern systems I don't even think you can do that though.
 - casting has same precedence as unary operators
-
+- hexadecimals can be stored in ints via 0x and the val.
+- bit manipulation, 6 operators: char, short, int, and long, only applicable to integral operands (what i just listed)
+- & is bitwise AND, | is bitwise inclusive OR, % is bitwise exclusive OR, `<<` is left shift, `>>` is right shift, ~ is "one's complement (unary)"
+- Didn't know bitwise going into this, learning now: & compares the bits between two numbers in each place, with 1 being in both to be a 1, otherwise false. Same thing with |, but with or rather than and. ^, exclusive or, the bits have to be opposite, if so it's one, otherwise it's 0. ~, "one's complement" or "NOT" just gives opposite of each bits, where its unary (works on one val), gonna inverse sign on signed values because yk 1 negative 0 positive. the shifts literally just shift the numbers to the left by the amount on the right side of the operator, discarding whetever is cut off. 
 
 
 ### Filling "Didn't Understand" Gaps
