@@ -108,7 +108,12 @@ April 27, 2026
 - bit manipulation, 6 operators: char, short, int, and long, only applicable to integral operands (what i just listed)
 - & is bitwise AND, | is bitwise inclusive OR, % is bitwise exclusive OR, `<<` is left shift, `>>` is right shift, ~ is "one's complement (unary)"
 - Didn't know bitwise going into this, learning now: & compares the bits between two numbers in each place, with 1 being in both to be a 1, otherwise false. Same thing with |, but with or rather than and. ^, exclusive or, the bits have to be opposite, if so it's one, otherwise it's 0. ~, "one's complement" or "NOT" just gives opposite of each bits, where its unary (works on one val), gonna inverse sign on signed values because yk 1 negative 0 positive. the shifts literally just shift the numbers to the left by the amount on the right side of the operator, discarding whetever is cut off. 
-
+- n = n & 0117; Because of the way octal is set up, 0117, 00000000 1111111, the only way the condition can pass is if they are both ones and the values past the lowest 7 are 0, so that cannot be achieved. So the value gets "masked" with the 7 1s, keeping the lowest 7 bin digits.
+- or sets on bits wherever 1 is because that fulfills the condition.
+- shifting a signed quantity will fill with bit signs on some machines, which is known as arithmitic shift, and 0 bits on other machines, logical shift.
+- x = x & ~077 is preferrable to x = x & 0177700 for setting last 6 bits of x to zero because ~077 can be evaluated the match the size of x during compile time, wasting less space.
+April 29, 2026
+- Back then, for signed vals, machines would either do arithmetic shifts, seeing the first bit and filling that accordingly, or logical shifts, just filling the first bit with 0 no matter what. Most modern systems do arithmitic.
 
 ### Filling "Didn't Understand" Gaps
 April 25, 2026
