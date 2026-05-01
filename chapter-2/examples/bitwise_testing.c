@@ -15,6 +15,7 @@ main(){
     n = n & 0177;
 
 
-    printf("%d\n", n);
+    printf("%d\n\n\n", n);
+    printf("%u", sizeof(69420));
     
 }

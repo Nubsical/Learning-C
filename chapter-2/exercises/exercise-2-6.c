@@ -33,5 +33,5 @@ unsigned setbits(unsigned x, int p, int n, unsigned y){
 
 main(){
     //x: 69420, p: 5, n: 3, y: 676767
-    printf("%d\n\n", setbits(6940, 5, 3, 67673));
+    printf("%d\n", setbits(69420, 5, 3, 676767));
 }
