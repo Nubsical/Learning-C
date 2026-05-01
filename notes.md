@@ -114,6 +114,10 @@ April 27, 2026
 - x = x & ~077 is preferrable to x = x & 0177700 for setting last 6 bits of x to zero because ~077 can be evaluated the match the size of x during compile time, wasting less space.
 April 29, 2026
 - Back then, for signed vals, machines would either do arithmetic shifts, seeing the first bit and filling that accordingly, or logical shifts, just filling the first bit with 0 no matter what. Most modern systems do arithmitic.
+May 1, 2026
+- expression1 ? expression2 : expression3, checks if expression1 is true, if so, then it returns expression2, otherwise, expression3.
+- because ? is an expression, it conforms to datatype rules where the resulting returning datatype is the "greater" one (int -> float), even if its the other one.
+
 
 ### Filling "Didn't Understand" Gaps
 April 25, 2026
