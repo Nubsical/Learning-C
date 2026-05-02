@@ -55,11 +55,6 @@ April 22, 2026
 
 ## Chapter 2 - Types, Operators, Expressions
 
-### Notepad (ignore, just for annotating, will delete)
-
-
-
-
 ### Summary/Reflection
 Alright tons of content, took me a week to go over because of AP exam prep, but C works a bit differently than other languages, specifically that it isn't baby proofed and works closer to bits, resulting in variability between machines. As with other languages, datatypes have different behavior in the context of others, with them being changed to the "bigger" one when used in an operation with another, being changed to whatever its being assigned to, etc. There's also constants that can be made with #define or const keyword which word mostly like java. declarations require an explicit definition and declaration, which I prefer to just do in the beginning before the main function so i don't gotta handle that but I'll have to adjust according to the modern standard anyways. Theres bitwise operators, good for data efficiency, I may need more practice with this since I have to manually think about how i'm gonna go about the problem before I actually do it, though I was able to get them all decently easily.
 
@@ -129,4 +124,29 @@ April 25, 2026
 - floats confusion: floats follow a specific formula, value = 1.mantissa * 2^exponenent. To find the max you would want to keep multiplying a float by two until it reaches is maximum as multiplying by two is essentally adding 1 to the exponenet, and when the exponenet reading the maximum possible value, the float is at it's maximum.
 April 26, 2026
 - truncation being machine dependent confusion: back then, there wasn't a standard so some cpus truncated to -infinity vs to 0. Today, the standard is 0. 
+
+
+---
+
+## Chapter 3 - Control Flows
+Gonna change this up a little for optimization, I'll not type out examples if I truely know the content they're tryna portray, like I know what and how to write a binary search and here, it's identical to Java. Also, I'll write down all things worth remembering, but if it's already in stored in my mind, no reason to rewrite because that makes the review process worse. Though, no matter what, i'll do all the exercises unless told otherwise.
+
+
+### Summary/Reflection
+
+### Understood/Didn't Understand
+
+### Things worth remembering
+May 2, 2026
+- semicolons here are "terminators" rather than "seperators", the difference being seperating between statements vs ending a line of code. Like python, langauges like Pascal prior to C used \n to end a statement.
+- should generally use braces during nested if statements because the corresponding else/else if can be complicated as they correspond to the newest one.
+- In C, {1, 2, 3} only works as a format for declaration, not as a datatype in itself.
+- in a case statement, defaults are optional but it just doesn't do anything if nothing is satisfied.
+- don't know why i didn't realize this sooner but break; in a switch case statement is used to break out of the switch statement.
+- good practice to put break after default for if a case gets added after that.
+- each of the 3 elements of a for loop can be ommitted, just need to have semicolons
+
+
+### Filling "Didn't Understand" Gaps
+
 
