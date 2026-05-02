@@ -1,7 +1,10 @@
 #include <stdio.h>
 
 main(){
-    int h = 0;
-    h += 0x1;
-    printf("%d", h);
+    int a[10];
+    int i = 5;
+    a[i] = i++;
+
+    printf("%d\n", a[i]);
+    printf("%d\n", a[i]);
 }

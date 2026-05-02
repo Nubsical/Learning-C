@@ -60,7 +60,9 @@ April 22, 2026
 
 
 
-### Summary
+### Summary/Reflection
+Alright tons of content, took me a week to go over because of AP exam prep, but C works a bit differently than other languages, specifically that it isn't baby proofed and works closer to bits, resulting in variability between machines. As with other languages, datatypes have different behavior in the context of others, with them being changed to the "bigger" one when used in an operation with another, being changed to whatever its being assigned to, etc. There's also constants that can be made with #define or const keyword which word mostly like java. declarations require an explicit definition and declaration, which I prefer to just do in the beginning before the main function so i don't gotta handle that but I'll have to adjust according to the modern standard anyways. Theres bitwise operators, good for data efficiency, I may need more practice with this since I have to manually think about how i'm gonna go about the problem before I actually do it, though I was able to get them all decently easily.
+
 
 ### Understood/Didn't Understand
 April 25, 2026
@@ -117,7 +119,8 @@ April 29, 2026
 May 1, 2026
 - expression1 ? expression2 : expression3, checks if expression1 is true, if so, then it returns expression2, otherwise, expression3.
 - because ? is an expression, it conforms to datatype rules where the resulting returning datatype is the "greater" one (int -> float), even if its the other one.
-
+- Unlike other programming languages, in C, when two functions are called during one operation, the order at which functions are called is dependent on compiler, mostly unpredictable. Not in parallel, sequentially.
+- Expressions that modify a vairable and use that variable somewhere else have "undefined" behavior since the language doesn't guarantee when the modification happens in the expression.
 
 ### Filling "Didn't Understand" Gaps
 April 25, 2026
