@@ -145,6 +145,9 @@ May 2, 2026
 - don't know why i didn't realize this sooner but break; in a switch case statement is used to break out of the switch statement.
 - good practice to put break after default for if a case gets added after that.
 - each of the 3 elements of a for loop can be ommitted, just need to have semicolons
+May 22
+- for loop, forst and last are function calls while middle is relational, with middle being true by default (if it isn't present)
+- theres comma operators and theres commas for seperating function arguments, with comma operators being used as one expression and returning the rightmost.
 
 
 ### Filling "Didn't Understand" Gaps
