@@ -148,8 +148,6 @@ May 2, 2026
 May 22
 - for loop, forst and last are function calls while middle is relational, with middle being true by default (if it isn't present)
 - theres comma operators and theres commas for seperating function arguments, with comma operators being used as one expression and returning the rightmost.
-
-
-### Filling "Didn't Understand" Gaps
-
+- goto is useful for deeply nested code where its better to just say screw it and error-handle
+- code utilizing goto is often harder to understand/maintain, thus making it better to minimize usage.
 
