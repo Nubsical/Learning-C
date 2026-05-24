@@ -171,3 +171,4 @@ May 22
 - if return type not indicated in calling scope then it assumed based off of context
 - function calls are based on assumptions, where the parenthesis -> assuming a function of int and assumes that parameters are correct, like if they were empty it would assume it's meant to be empty.
 - good practice to, if you want to cast a datatype to the functions return type, to manually cast it anyways to avoid warnings.
+- can't define functions within functions
