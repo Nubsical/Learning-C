@@ -133,6 +133,9 @@ Gonna change this up a little for optimization, I'll not type out examples if I 
 
 
 ### Summary/Reflection
+May 23, 2026
+- Huge 15+ day break because of AP exams but got through it. Already knew everything but there were minute details like the purpose of semicolon being used to seperate different statements and the format of a for loop allowing for multiple statements within the 2 executions/1 comparison via commas, which im assuming will be really helpful for managing multiple pointers. Also refined my knowledge of things case switches where breaks are for exiting them yeah that's mostly it. 
+
 
 ### Understood/Didn't Understand
 
@@ -151,3 +154,20 @@ May 22
 - goto is useful for deeply nested code where its better to just say screw it and error-handle
 - code utilizing goto is often harder to understand/maintain, thus making it better to minimize usage.
 
+
+---
+
+## Chapter 4 - Functions and Program Structure
+
+
+### Summary/Reflection
+
+### Understood/Didn't Understand
+
+### Things worth remembering
+- you can reach the end of a function without returning anything despite there being a return type.
+- must specifially indicate to the program when you are returning something non-int through "instantiating" it via the type and its parameter type.
+- mismatch of return types of different definitinos of the same function are detected within the same source file but not different files. 
+- if return type not indicated in calling scope then it assumed based off of context
+- function calls are based on assumptions, where the parenthesis -> assuming a function of int and assumes that parameters are correct, like if they were empty it would assume it's meant to be empty.
+- good practice to, if you want to cast a datatype to the functions return type, to manually cast it anyways to avoid warnings.
