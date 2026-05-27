@@ -172,3 +172,19 @@ May 22
 - function calls are based on assumptions, where the parenthesis -> assuming a function of int and assumes that parameters are correct, like if they were empty it would assume it's meant to be empty.
 - good practice to, if you want to cast a datatype to the functions return type, to manually cast it anyways to avoid warnings.
 - can't define functions within functions
+May 26, 2026
+- extern keyword required for when def is after call or in diff file
+- extern doesn't reserve storage and just declares it
+- only one definition of external var
+- static functions keep variable/function in memory permanently, allows for accessing/modifying from another file continously.
+- they also limit scope to only the file where it's defined, not declared
+May 27, 2026
+- registers are storage locations within CPUs that allow for fast operations
+- register declaration allows for this
+- Only for automatic variables (local vars inside of functions) and parameters
+- only a few vars can be kept in registers/only certain types allowed
+- external/static variables are initialized to 0 by default wihtout "excplicit intialization"
+- initilizing is giving both the definition and the value
+- external and static variables have to be constants, but automatic/register veriables don't since they can be things like function calls.
+- within an array, each definition provided for each index is its own intialization. specifically for {}.
+- setting character array to a string is also considered initializing it
