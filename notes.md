@@ -188,3 +188,10 @@ May 27, 2026
 - external and static variables have to be constants, but automatic/register veriables don't since they can be things like function calls.
 - within an array, each definition provided for each index is its own intialization. specifically for {}.
 - setting character array to a string is also considered initializing it
+May 30, 2026
+- \#whatever is part of the preprocessor, seperate first step of compilation
+- \#include begins at the source directory when searching for a file, with how it searches if it's not there being implementation defined. doesn't have to refer to files thought, again implementation based
+- when included file is changed, upper files gotta be recompiled too, since it originally compiled with previous file stuff.
+- on defined, you have to put \ at the end of each line to continue onto the next one
+- define's definition works with any text, including functions
+- it also works with creating a function, with the function declaration going in the first parameter, and the definition going in the second, sick for being flexible with different datatypes
