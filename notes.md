@@ -195,3 +195,10 @@ May 30, 2026
 - on defined, you have to put \ at the end of each line to continue onto the next one
 - define's definition works with any text, including functions
 - it also works with creating a function, with the function declaration going in the first parameter, and the definition going in the second, sick for being flexible with different datatypes
+- \#undef whatever literally undefines it, ensuring that you can make a function out of it and it isn't a macro
+- \#expr with expr being the parameter within define macro results in a string version of parameter.
+- the \#\# "operator" in a macro definition concatenates the left and right operand.
+- \#if or branch must end if \#endif to signify end
+- \#defined can be used in an \#if to see if file exists or not
+- to avoid including definiton of a file multiple times, that's when you use \#if !defined(whaever)
+- \#ifndef and \#ifdef are \#if !defined(x) and \#if defined(x) respectively
