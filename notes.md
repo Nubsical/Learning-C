@@ -161,8 +161,9 @@ May 22
 
 
 ### Summary/Reflection
+May 31, 2026
+- Pretty different from other object oriented languages i'm used to because there aren't classes. Codes can be split into different files for organization, and to share the functions between those files, they must be compiled seperately/linked along with having a common header file to declare said variables. There's different preprocessing things like macros and inclusions, which allow for lots of things like easy substitions, "importing" of other files' codes, and defining macros that may work universally in regards to datatypes. Also register variables exist where data is stored in cpu for fast access.
 
-### Understood/Didn't Understand
 
 ### Things worth remembering
 - you can reach the end of a function without returning anything despite there being a return type.
@@ -202,3 +203,23 @@ May 30, 2026
 - \#defined can be used in an \#if to see if file exists or not
 - to avoid including definiton of a file multiple times, that's when you use \#if !defined(whaever)
 - \#ifndef and \#ifdef are \#if !defined(x) and \#if defined(x) respectively
+- header files, .h files, are like interfaces where it just declares stuff to use it.
+
+
+---
+
+## Chapter 5 - Pointers and Arrays
+
+
+### Summary/Reflection
+
+
+### Things worth remembering
+- pointer is a variable that contains address of a var, group of cells
+- multiple consecutive memory cells, where each memory cell is a byte (specifically in context of addressable ones), and in combination with one another can form datatypes like chars, shorts, ints, longs, etc.
+- & operator, unary, gives address of object.
+- p = &c, c's address is stored in p, only works for variables stored in memory.
+- pointer format works with function declarations
+- most pointers are constrained to point to a particular kind of object
+- *pointer can be used in any place the data itself is
+- unary operators associate right to left, so although * operator has high precedence, when doing a unary operator that's to the right of it, you gotta use paranthesis, where (*ip)++ is correct.
