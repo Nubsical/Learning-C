@@ -215,6 +215,7 @@ May 30, 2026
 
 
 ### Things worth remembering
+May 31, 2026
 - pointer is a variable that contains address of a var, group of cells
 - multiple consecutive memory cells, where each memory cell is a byte (specifically in context of addressable ones), and in combination with one another can form datatypes like chars, shorts, ints, longs, etc.
 - & operator, unary, gives address of object.
@@ -223,3 +224,14 @@ May 30, 2026
 - most pointers are constrained to point to a particular kind of object
 - *pointer can be used in any place the data itself is
 - unary operators associate right to left, so although * operator has high precedence, when doing a unary operator that's to the right of it, you gotta use paranthesis, where (*ip)++ is correct.
+June 1, 2026
+- pointer versions of iteration are generally faster but harder to understand
+- taking a pointer that points to an element of an array and adding an int makes it correspond to the pointer + added val element part of memory.
+- the variable of the array is the same as the address of the first element of it.
+- a[\i] = *(a+i)
+- pa[\i] is = to *(pa + i)
+- pointers are variables so pa++ and pa=a is legal while a = pa or a++ are illegal
+- array name that's used as a parameter for a function is the location of the inital element -> array name parameter is a pointer
+- when array name is passed to function, the function can pick and choose at its convenience to handle it like a pointer and/or array
+- despite a function declaration parameter expecting an array (int arr[] or int *arr), you can still pass the address of an element of the array that isn't the 0th, and it would be fine
+- can refer to arr[\elements less than 0] when referring to a pointer to an array of element above 0, since that would remain in bounds.
