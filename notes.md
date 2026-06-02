@@ -235,3 +235,8 @@ June 1, 2026
 - when array name is passed to function, the function can pick and choose at its convenience to handle it like a pointer and/or array
 - despite a function declaration parameter expecting an array (int arr[] or int *arr), you can still pass the address of an element of the array that isn't the 0th, and it would be fine
 - can refer to arr[\elements less than 0] when referring to a pointer to an array of element above 0, since that would remain in bounds.
+June 2nd, 2026
+- 0 is the only exception for which poitners and integers are "interchangable", where 0 can be assigned to a pointer, but NULL is more often used.
+- comparing a pointer to 0 is checking if it's null
+- comparing pointers can only be done if they are referring to the same array, except if you're comparing to a pointer outside a array, where it points to something outside the array. Happens because it has a reference point of where it is located in relative to the memory it's referencing.
+- when operations done to pointer, it's adding the value added + the size of the datatype to avoid hitting the middle.
