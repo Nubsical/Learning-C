@@ -240,3 +240,7 @@ June 2nd, 2026
 - comparing a pointer to 0 is checking if it's null
 - comparing pointers can only be done if they are referring to the same array, except if you're comparing to a pointer outside a array, where it points to something outside the array. Happens because it has a reference point of where it is located in relative to the memory it's referencing.
 - when operations done to pointer, it's adding the value added + the size of the datatype to avoid hitting the middle.
+June 3rd, 2026
+- inputting a string in a function, the function acceses it through a pointer, specifically to the first element address.
+- variable = to string means variable is a pointer to character array
+- char array of string is read/writable, while pointer to string is only readable.

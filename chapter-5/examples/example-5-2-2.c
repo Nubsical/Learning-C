@@ -4,6 +4,8 @@
 int getch(void);
 void ungetch(int);
 
+#define SIZE 100
+
 int getint(int *pn){
     int c, sign;
     while (isspace(c = getch()));
@@ -20,9 +22,9 @@ int getint(int *pn){
     if (c != EOF)
         ungetch(c);
     return c;
+}
 
 int main(){
     int n, array[SIZE], getint(int *);
     for(n = 0; n < SIZE && getint(&array[n]) != EOF; n++);
-
 }
