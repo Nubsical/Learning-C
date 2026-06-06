@@ -244,3 +244,7 @@ June 3rd, 2026
 - inputting a string in a function, the function acceses it through a pointer, specifically to the first element address.
 - variable = to string means variable is a pointer to character array
 - char array of string is read/writable, while pointer to string is only readable.
+June 5th, 2026
+- char *name[\length]; is the syntax for an array of strings
+- first reads name[\length] to get an array called name of that length, then reads * to make it an array of pointers, then reads char to make it a each element point to a char -> array of char pointers
+- within the line *lineptr++, ++ has higher precedence, so it schedules the ++ to lineptr and then deferences it for whatever it was doing, and the ++ gets applied to lineptr and not it's pointee
