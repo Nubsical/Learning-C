@@ -248,3 +248,12 @@ June 5th, 2026
 - char *name[\length]; is the syntax for an array of strings
 - first reads name[\length] to get an array called name of that length, then reads * to make it an array of pointers, then reads char to make it a each element point to a char -> array of char pointers
 - within the line *lineptr++, ++ has higher precedence, so it schedules the ++ to lineptr and then deferences it for whatever it was doing, and the ++ gets applied to lineptr and not it's pointee
+June 9th, 2026
+- knew most of stuff from previous points, didn't need to write notes, see commits
+- two arguments main is called with: argc for arg count, num arguments and argv, arg vector, pointer to array of char strings with arguments.
+- with example, echo, argv[\0] is the name invoked by the program, where argc is one or more because it's one. echo hi would have argc be 2 since it's two there.
+- the program automatically fills in argv and argc accordingly, with argc being first.
+- argv[\0] is the first part, being the program name
+- -letter is the norm in C for flags
+- optional arguments should be allowed in any order
+- you should be able to combine arguments to get line -nx
