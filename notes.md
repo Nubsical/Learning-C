@@ -257,3 +257,9 @@ June 9th, 2026
 - -letter is the norm in C for flags
 - optional arguments should be allowed in any order
 - you should be able to combine arguments to get line -nx
+June 14, 2026
+- can make pointers to functions
+- function names are addresses of functions, though they don't require & since they are known to be functions 
+June 17, 2026
+- to determine the nature of a declaration, it's easier to bounce right to left to right, bouncing on paranthesis.
+- dcl describes an expression with * on it, turning it into a pointer, where a direct dcl means theres a [] or () on it turning it into an array or function, just labels.

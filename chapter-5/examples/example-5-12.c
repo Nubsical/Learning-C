@@ -1,0 +1,3 @@
+void dcl (void){
+    
+}
