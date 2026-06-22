@@ -210,10 +210,6 @@ May 30, 2026
 
 ## Chapter 5 - Pointers and Arrays
 
-
-### Summary/Reflection
-
-
 ### Things worth remembering
 May 31, 2026
 - pointer is a variable that contains address of a var, group of cells
@@ -263,3 +259,20 @@ June 14, 2026
 June 17, 2026
 - to determine the nature of a declaration, it's easier to bounce right to left to right, bouncing on paranthesis.
 - dcl describes an expression with * on it, turning it into a pointer, where a direct dcl means theres a [] or () on it turning it into an array or function, just labels.
+
+
+---
+
+## Chapter 6 - Structures
+
+### Things worth remembering
+- structure is collection of variables into one name, to be a unit rather than seperate
+- within brackets of structure is a list of declarations for whatever variables
+- struct name is optional, called a tag
+- variables within structure are members, can have same name as tag
+- given a preexisting struct, by saying struct thattag pt, pt is a structure of type struct thattag.
+- structurename.member refers to the member of a structure.
+- with structure, can only take address, access members, copy it, or assign to it as a unit
+- when you got a pointer to a structure and want to access a member a nicer way of doing so is saying pointer -> member
+- ., ->, (), and [] got really high priority
+
